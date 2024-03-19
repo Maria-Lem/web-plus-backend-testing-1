@@ -16,8 +16,8 @@ describe('PostsService', () => {
     const newPost = postsService.create(post);
 
     expect(postsService.find(newPost.id)).toEqual({
-      id: newPost.id,
       text: newPost.text,
+      id: newPost.id,
       date: newPost.date,
     });
   });
@@ -26,8 +26,8 @@ describe('PostsService', () => {
     const newPost = postsService.create(post);
 
     expect(postsService.find(newPost.id)).toEqual({
-      id: newPost.id,
       text: newPost.text,
+      id: newPost.id,
       date: newPost.date,
     });
   });
